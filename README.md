@@ -81,5 +81,5 @@ Response: Blocking suspicious IP and logging event
 This project was created for learning purposes to demonstrate **incident response concepts in cybersecurity**.
 
 ## Author
-Nethmi Kariyawasam
+Nethmi Kariyawasam /n
 Student Cybersecurity Project
