@@ -1,0 +1,8 @@
+venv/
+data/faces/
+data/users.db
+__pycache__/
+*.pyc
+.env
+.cache/
+*.h5
