@@ -1,0 +1,2 @@
+Attack: Port Scan | Response: Blocking suspicious IP and logging event
+Attack: Port Scan | Response: Blocking suspicious IP and logging event

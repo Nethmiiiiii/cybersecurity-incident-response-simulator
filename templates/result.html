@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Security Report</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#020617;
+color:white;
+text-align:center;
+}
+
+.box{
+background:#1e293b;
+padding:20px;
+margin:20px auto;
+width:400px;
+border-radius:10px;
+}
+
+.low{color:#22c55e;}
+.medium{color:#facc15;}
+.high{color:#ef4444;}
+
+button{
+padding:12px;
+background:#3b82f6;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Security Incident Report</h1>
+
+<div class="box">
+<h2>Attack Detected</h2>
+<p>{{ attack }}</p>
+</div>
+
+<div class="box">
+<h2>Response Action</h2>
+<p>{{ response }}</p>
+</div>
+
+<div class="box">
+<h2>Total Attacks Detected</h2>
+<p>{{ count }}</p>
+</div>
+
+<div class="box">
+<h2>Threat Level</h2>
+
+{% if threat == "Low" %}
+<p class="low">{{ threat }}</p>
+
+{% elif threat == "Medium" %}
+<p class="medium">{{ threat }}</p>
+
+{% else %}
+<p class="high">{{ threat }}</p>
+
+{% endif %}
+
+</div>
+
+<a href="/">
+<button>Back to Dashboard</button>
+</a>
+
+</body>
+</html>
